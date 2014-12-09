@@ -8,6 +8,7 @@ For example, after you’ve launch your application and it’s in the hands of u
 
 1. Include the lumberjack.js
 2. Include this code:
+
     ```html
     <script>
         var logger = new Lumberjack();
