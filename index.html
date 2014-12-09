@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="lumberjack.js"></script>
+<script>
+    var logger = new Lumberjack({
+         remote_logging: true
+        ,remote_url: 'test'
+    });
+
+    logger.log('Test Log');
+    logger.error('Test Error', ['Test item', {1:2}]);
+    logger.warn('Test Warn');
+</script>
+
+</body>
+</html>
