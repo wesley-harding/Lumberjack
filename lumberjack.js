@@ -111,7 +111,15 @@ function Lumberjack(configs){
         var data = {};
         data[type] = arguments;
 
-        var request = new XMLHttpRequest();
+        var request;
+
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            request = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            request = new ActiveXObject("Microsoft.XMLHTTP");
+        }
         request.open('POST', configs.remote_url, true);
         request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
         request.send(JSON.stringify(data));
