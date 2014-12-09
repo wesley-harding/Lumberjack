@@ -29,9 +29,9 @@ This is currently a proof of concept. It only has very minimal features and curr
 I have only tested it in Chrome, but I actively avoid features that I know will break other browsers.
 
 ##Why use Lumberjack?
-See what errors the browser is reporting
-Doesn’t break if the browser doesn’t support console.log (I’m looking at you internet explorer)
-It comes in handy if you don’t have easy access to the console (i.e. older browsers and mobile devices)
+* See what errors the browser is reporting
+* Doesn’t break if the browser doesn’t support console.log (I’m looking at you internet explorer)
+* It comes in handy if you don’t have easy access to the console (i.e. older browsers and mobile devices)
 
 ##Configurations
 passthrough: true, //TODO: Indicate if Lumberjack should pass logging actions to the console for output
