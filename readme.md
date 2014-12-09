@@ -7,6 +7,10 @@ For example, after you’ve launch your application and it’s in the hands of u
 ###How to use Lumberjack
 
 1. Include the lumberjack.js
+
+   ```html
+   <script src="lumberjack.js"></script>
+   ```
 2. Include this code:
 
     ```html
